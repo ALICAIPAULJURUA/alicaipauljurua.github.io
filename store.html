@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Profile</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>User Profile</h1>
+        <div id="profileData">
+            <!-- Captured data will be displayed here using JavaScript -->
+            <div class="container">
+                <h1>User Profile</h1>
+                <form id="profileForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+        
+                    <label for="contact">Contact Information:</label>
+                    <input type="text" id="contact" required>
+        
+                    <label for="education">Educational Background:</label>
+                    <textarea id="education" rows="4" required></textarea>
+        
+                    <label for="work">Work Experiences:</label>
+                    <textarea id="work" rows="4" required></textarea>
+        
+                    <label for="skills">Skills:</label>
+                    <input type="text" id="skills" required>
+        
+                    <label for="hobbies">Hobbies:</label>
+                    <input type="text" id="hobbies" required>
+        
+                    <label for="languages">Languages Known:</label>
+                    <input type="text" id="languages" required>
+        
+                    <label for="profilePicture">Profile Picture URL:</label>
+                    <input type="text" id="profilePicture" required>
+        
+                    <button type="button" onclick="createProfile()">Create Profile</button>
+                </form>
+            </div>
+        </div>
+        <button onclick="printProfile()">Print Profile</button>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
